@@ -1,0 +1,38 @@
+<form class="form-horizontal">
+	<h4>{{ _('ISY key') }}</h4>
+	<div class="control-group">
+		<label class="control-label">{{ _('ISY key') }}</label>
+		<div class="controls">
+			<textarea spellcheck="false" data-bind="value: isykeys"></textarea>
+		</div>
+	</div>
+	<h4>{{ _('Events & webhooks') }}</h4>
+	<div class="table-responsive">
+		<table class="table">
+			<thead><tr>
+				<th><span>{{ _('Event Name') }}</span></th>
+				<th><span>{{ _('Webhook Names') }}</span></th>
+				<th class="value"><span>{{ _('Body Value') }}</span></th>
+				<th style="flex-shrink: 0; max-width: 37px;"></th>
+			</tr></thead>
+			<tbody>
+				<!-- ko foreach: events -->
+					<tr data-bind="with: new $root.Event($data)">
+						<td><input type="text" data-bind="value: name"></input></td>
+						<td><textarea spellcheck="false" style="resize: none" data-bind="value: webhookNames, attr: { placeholder }"></textarea></td>
+						<td class="value"><input type="text" data-bind="value: bodyvalue"></input></td>
+						<td style="max-width: 37px;">
+							<button class="btn btn-danger" title="Remove" data-bind="click: remove">
+								<i class="fa fa-minus"></i>
+							</button>
+						</td>
+					</tr>
+				<!-- /ko -->
+				<tr style="justify-content: flex-end;"><td style="overflow: visible; flex-grow: 0; padding: 0; border: 0;">
+					<button class="btn btn-primary" title="Add new" data-bind="click: newEvent">
+						<i class="fa fa-plus"></i>
+					</button>
+			</tbody>
+		</table>
+	</div>
+</form>

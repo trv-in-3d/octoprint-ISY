@@ -1,0 +1,29 @@
+#settings_plugin_ISY tbody, #settings_plugin_ISY thead {
+	display: flex;
+	flex-direction: column;
+}
+
+#settings_plugin_ISY tr {
+	display: flex;
+	align-items: center;
+}
+
+#settings_plugin_ISY td, #settings_plugin_ISY th {
+	flex: 1 1 0;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+#settings_plugin_ISY td.value, #settings_plugin_ISY th.value {
+	flex-grow: .5;
+}
+
+#settings_plugin_ISY td input, #settings_plugin_ISY th span {
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+}
