@@ -7,7 +7,7 @@ Connects OctoPrint events to ISY.
 Install via the bundled [Plugin Manager](https://github.com/foosel/OctoPrint/wiki/Plugin:-Plugin-Manager)
 or manually using this URL:
 
-    https://github.com/trv-in-3d/OctoPrint-ISY/archive/master.zip
+    https://github.com/trv-in-3d/OctoPrint-ISY/archive/main.zip
 
 This is highly based on the IFTTT plugin by tjjfvi  [https://github.com/tjjfvi/OctoPrint-IFTTT]
 This is my first attempt at Python, Octoprint plug-in development & git all rolled into one.  I modified the plugin to make calls to Universal Devices ISY web platform to support anyone using a ISY-994 for home automation.
