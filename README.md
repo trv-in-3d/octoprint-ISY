@@ -7,14 +7,18 @@ Connects OctoPrint events to ISY.
 Install via the bundled [Plugin Manager](https://github.com/foosel/OctoPrint/wiki/Plugin:-Plugin-Manager)
 or manually using this URL:
 
-    https://github.com/tjjfvi/OctoPrint-ISY/archive/master.zip
+    https://github.com/trv-in-3d/OctoPrint-ISY/archive/master.zip
 
-Then follow the steps listed [here](https://github.com/tjjfvi/OctoPrint-ISY/wiki).
+This is highly based on the IFTTT plugin by tjjfvi  [https://github.com/tjjfvi/OctoPrint-IFTTT]
+This is my first attempt at Python, Octoprint plug-in development & git all rolled into one.  I modified the plugin to make calls to Universal Devices ISY web platform to support anyone using a ISY-994 for home automation.
 
 ## Configuration
 
+COMING SOON
+
 ### Makerkeys
-A unique API key for ISY. Go [here](https://IFTT.com/services/maker_webhooks) and click `Documentation`. Look at the URL it sends you to; the last part (after the `/use/`) is the makerkey. You can put multiple makerkeys, seperated by newlines, here.
+A unique API key for ISY.
+
 
 ### Default prefixes
 Default prefixes for the triggers. If you have an event `MyEvent` and prefixes `prefix1-` and `prefix2-`, it will, by default make the triggers `prefix1-MyEvent` and `prefix2-MyEvent`. Seperate the prefixes with newlines.
